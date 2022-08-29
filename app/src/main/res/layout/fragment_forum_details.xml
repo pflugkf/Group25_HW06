@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--Assignment #: HW06
+File Name: Group25_HW06 - fragment_forum_details.xml
+Full Name: Kristin Pflug-->
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout5"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForumDetailsFragment">
+
+    <TextView
+        android:id="@+id/details_forumTitle"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/details_forumAuthor"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_forumTitle" />
+
+    <TextView
+        android:id="@+id/details_forumText"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_forumAuthor" />
+
+    <TextView
+        android:id="@+id/details_forumCommentCountLabel"
+        android:layout_width="332dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="TextView"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_forumText" />
+
+    <EditText
+        android:id="@+id/details_commentTextbox"
+        android:layout_width="217dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/comment_textbox_hint_text"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_forumCommentCountLabel" />
+
+    <Button
+        android:id="@+id/details_postButton"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/post_button_label"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.589"
+        app:layout_constraintStart_toEndOf="@+id/details_commentTextbox"
+        app:layout_constraintTop_toBottomOf="@+id/details_forumCommentCountLabel" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/details_commentList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/details_commentTextbox"
+        tools:listitem="@layout/comment_list_item" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

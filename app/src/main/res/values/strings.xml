@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Group25_HW06</string>
+
+    <string name="email_textbox_hint_text">Email</string>
+    <string name="name_textbox_hint_text">Name</string>
+    <string name="password_textbox_hint_text">Password</string>
+    <string name="forum_title_hint_text">Forum Title</string>
+    <string name="forum_description_hint_text">Forum Description</string>
+    <string name="comment_textbox_hint_text">Write Comment</string>
+
+    <string name="submit_button_label">Submit</string>
+    <string name="cancel_button_label">Cancel</string>
+    <string name="login_button_label">Login</string>
+    <string name="create_account_button_label">Create New Account</string>
+    <string name="logout_button_label">Logout</string>
+    <string name="new_forum_button_label">New Forum</string>
+    <string name="post_button_label">Post</string>
+
+    <string name="login_fragment_title">Login</string>
+    <string name="register_fragment_title">Create New Account</string>
+    <string name="forums_fragment_title">Forums</string>
+    <string name="forum_details_fragment_title">Forum</string>
+    <string name="create_forum_fragment_title">New Forum</string>
+
+    <string name="forum_placeholder_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Fusce fermentum accumsan mollis. Aenean sit amet venenatis enim. Suspendisse a ultrices risus.
+        Proin iaculis mi nec diam congue, et commodo libero semper. Nunc vitae condimentum orci. Sed
+        venenatis mi a auctor pretium. Proin condimentum arcu ullamcorper tellus molestie, vel
+        pellentesque justo gravida. Quisque quis ante massa. Etiam et dolor porta, gravida tellus sed,
+        aliquam elit. Morbi porttitor, lorem a pellentesque egestas, lacus nisi eleifend lorem, at
+        dapibus elit turpis a tortor.</string>
+</resources>
